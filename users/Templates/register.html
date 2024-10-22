@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="wrapper">
+            <form action="{% url 'register' %}" method="post">
+                {% csrf_token %}
+                <h1>Register</h1>
+                <p>{{ form.username.label_tag }} {{ form.username }}</p>
+                <p>{{ form.password1.label_tag }} {{ form.password1 }}</p>
+                <p>{{ form.password2.label_tag }} {{ form.password2 }}</p>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-link">
+                    <p>Already have an account? <a href="{% url 'loginurl' %}">Login here</a></p>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

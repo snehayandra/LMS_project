@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="{% static 'css/sdstyles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>Dashboard</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Assignments</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="#">Grades</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <header class="top-bar">
+                <h1>Welcome, Student</h1>
+                <div class="profile">
+                    <img src="profile.jpg" alt="Profile Picture">
+                    <span>Jane Doe</span>
+                </div>
+            </header>
+
+            <section class="dashboard-content">
+                <div class="card">
+                    <h3>Courses</h3>
+                    <p>You are enrolled courses.</p>
+                </div>
+                <div class="card">
+                    <h3>Assignments</h3>
+                    <p>Due assignments for this week.</p>
+                </div>
+                <div class="card">
+                    <h3>Quizzes</h3>
+                    <p>2 quizzes are scheduled this month.</p>
+                </div>
+                <div class="card">
+                    <h3>Grades</h3>
+                    <p>Your current average grade.</p>
+                </div>
+                <div class="card">
+                    <h3>Announcements</h3>
+                    <p>New announcements.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

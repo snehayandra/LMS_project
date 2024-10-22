@@ -1,0 +1,141 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    background: no-repeat center center fixed;
+    background-image: url('/static/images/LOG-IMG.jpg');
+    background-size: cover;
+}
+
+/* Container to center everything */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Login Form Wrapper */
+.wrapper {
+    background: rgba(255, 255, 255, 0.1); /* Transparent glass effect */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); /* Blurred background effect */
+    border-radius: 12px;
+    padding: 40px 50px;
+    width: 350px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.wrapper h1 {
+    font-size: 32px;
+    color: #1c1a1a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input Box Styling */
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    padding: 10px 45px 10px 20px;
+    color: #fff;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Icon next to the input field */
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Remember me and Forgot Password */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Login Button */
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #6a5acd; /* Lavender color */
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #483d8b; /* Darker lavender shade */
+}
+
+/* Register Link */
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
